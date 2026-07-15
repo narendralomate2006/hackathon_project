@@ -1,0 +1,306 @@
+# 🤖 FormSaarthi AI Extension
+
+AI-powered Chrome Extension that assists users while filling scholarship and government forms.
+
+---
+
+## 🚀 Features (Current)
+
+- ✅ Chrome Extension (Manifest V3)
+- ✅ React + Vite
+- ✅ CRXJS Setup
+- ✅ Floating AI Button
+- ✅ Sliding Sidebar
+- 🔄 AI Chat (In Progress)
+- 🔄 Form Field Detection (Planned)
+- 🔄 OCR & Autofill (Planned)
+
+---
+
+# 📦 Tech Stack
+
+- React
+- Vite
+- CRXJS
+- Chrome Extension Manifest V3
+- React Icons
+- Axios
+
+---
+
+# 🛠 Prerequisites
+
+Install:
+
+- Node.js (LTS)
+- Git
+- Google Chrome
+
+---
+
+# 📥 Installation
+
+Clone the repository
+
+```bash
+git clone <repo-url>
+```
+
+Go inside the extension
+
+```bash
+cd hackathon_project
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+# ▶️ Development
+
+Run
+
+```bash
+npm run build
+```
+
+---
+
+# 📂 Load Extension
+
+Open Chrome
+
+```
+chrome://extensions
+```
+
+Enable
+
+```
+Developer Mode
+```
+
+Click
+
+```
+Load unpacked
+```
+
+Select
+
+```
+formsaarthi-ai/dist
+```
+
+---
+
+# 🔄 Development Workflow
+
+Whenever you make changes
+
+```text
+Edit Code
+        ↓
+npm run build
+        ↓
+Reload Extension
+        ↓
+Refresh Website
+```
+
+> **Note:** Chrome does not automatically reload unpacked extensions after a build.
+
+---
+
+# 📁 Project Structure
+
+```
+hackathon_project
+│
+├── public/
+│
+├── src/
+│   │
+│   ├── background/
+│   │      background.js
+│   │
+│   ├── content/
+│   │      content.jsx
+│   │
+│   ├── components/
+│   │      FloatingButton.jsx
+│   │      Sidebar.jsx
+│   │      SidebarHeader.jsx
+│   │
+│   ├── services/
+│   ├── hooks/
+│   ├── utils/
+│   │
+│   ├── App.jsx
+│   └── main.jsx
+│
+├── manifest.config.js
+├── vite.config.js
+├── package.json
+└── README.md
+```
+
+---
+
+# 🏗 Current Architecture
+
+```
+Chrome
+
+        │
+
+        ▼
+
+Content Script
+
+        │
+
+        ▼
+
+React App
+
+        │
+
+        ▼
+
+Floating Button
+
+        │
+
+        ▼
+
+Sidebar
+```
+
+---
+
+# 📅 Current Progress
+
+## ✅ Completed
+
+- Project Setup
+- React Setup
+- CRXJS Configuration
+- Manifest V3
+- Content Script Injection
+- Floating AI Button
+- Sidebar
+- Sidebar Toggle
+
+---
+
+## 🚧 In Progress
+
+- Chat UI
+- Sidebar Header
+- Quick Actions
+
+---
+
+## 📌 Upcoming Features
+
+- Detect active input field
+- AI Chat Assistant
+- Flask Backend
+- OCR
+- Document Upload
+- Autofill Form
+- Location Detection
+- State-specific Document Samples
+
+---
+
+# 👥 Team Workflow
+
+Create a separate branch before working.
+
+```bash
+git checkout -b feature-name
+```
+
+Examples
+
+```
+feature/sidebar
+
+feature/chat
+
+feature/ocr
+
+feature/backend
+```
+
+After completing a feature
+
+```bash
+git add .
+
+git commit -m "Added Sidebar"
+
+git push
+```
+
+Create a Pull Request before merging into `main`.
+
+---
+
+# 🧠 Future Architecture
+
+```
+Chrome Extension
+
+        │
+
+        ▼
+
+Content Script
+
+        │
+
+        ▼
+
+React Sidebar
+
+        │
+
+        ├── Chat
+
+        ├── Field Detector
+
+        ├── Document Viewer
+
+        ├── OCR
+
+        └── Quick Actions
+
+                │
+
+                ▼
+
+Flask API
+
+                │
+
+        ├── OpenAI
+
+        ├── OCR
+
+        ├── Supabase
+
+        └── Form Validation
+```
+
+---
+
+# 📜 License
+
+MIT
