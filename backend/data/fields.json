@@ -1,0 +1,23 @@
+{
+    "please enter your name": {
+        "document": "None",
+        "location": "-",
+        "format": "Text",
+        "description": "Enter your full name.",
+        "why": "Used to identify the applicant."
+    },
+    "aadhaar number": {
+        "document": "Aadhaar Card",
+        "location": "Front side below QR code",
+        "format": "1234 5678 9012",
+        "description": "12 digit Aadhaar Number",
+        "why": "Government identity verification."
+    },
+    "pan number": {
+        "document": "PAN Card",
+        "location": "Below Name",
+        "format": "ABCDE1234F",
+        "description": "Permanent Account Number",
+        "why": "Income Tax Identification."
+    }
+}
